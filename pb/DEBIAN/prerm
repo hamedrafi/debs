@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+
+# Stop the timer and service
+systemctl stop periodic-backup.timer || true
+systemctl stop periodic-backup.service || true
+
+# Disable the timer and service before removal
+systemctl disable periodic-backup.timer || true
+systemctl disable periodic-backup.service || true
+
+# Reload systemd to clean up unit files
+systemctl daemon-reload
+
+exit 0

@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+# Reload systemd to recognize new/changed units
+systemctl daemon-reload
+
+# Enable and start the timer
+systemctl enable periodic-backup.timer
+systemctl start periodic-backup.timer
+
+exit 0

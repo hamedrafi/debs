@@ -1,0 +1,7 @@
+[Unit]
+Description=Back up documents to external drive
+
+[Service]
+ExecStart=/usr/local/bin/backup.sh # Path to your backup script
+Type=oneshot
+TimeoutStartSec=0

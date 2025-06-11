@@ -1,0 +1,7 @@
+Package: periodic-backup
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Hamed Rafi <hamed.rafi@hamedrafi.com>
+Description: Simple backup script and systemd service for rsync backup.
